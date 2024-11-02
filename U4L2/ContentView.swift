@@ -100,8 +100,100 @@ struct ContentView: View {
                 }
 
             }
-            .padding()
-            
+            .padding(.leading, 15)
+            .padding(.trailing, 15)
+            VStack(spacing: 12){
+                HStack(spacing: 15) {
+                    Image(.img2)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 80, height: 80)
+                        .cornerRadius(40)
+                    
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("User Name")
+                            .font(.headline)
+                            .foregroundStyle(.black)
+                        Text("Lorem ipsum dolor sit amet")
+                            .font(.subheadline)
+                            .foregroundStyle(.gray)
+                        
+                        HStack {
+                            Image(systemName: "clock")
+                                .foregroundColor(.teal)
+                            Text("10.40 am - 2.40 pm")
+                                .font(.subheadline)
+                                .foregroundStyle(.gray)
+                        }
+                        
+                        HStack{
+                            Text("$10.50")
+                                .foregroundColor(.gray)
+                            Button {
+                            } label: {
+                                Text("appointment")
+                                    .foregroundStyle(.white)
+                                    .padding(.leading, 18)
+                                    .padding(.trailing, 18)
+                                    .padding(.top, 6)
+                                    .padding(.bottom, 6)
+                                    .background(.teal)
+                                    .cornerRadius(15)
+                                
+                            }
+                        }
+                    }
+                }
+                .padding(12)
+                .background(Color.white)
+                .cornerRadius(20)
+                .shadow(radius: 5)
+                HStack(spacing: 15) {
+                    Image(.img2)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 80, height: 80)
+                        .cornerRadius(40)
+                    
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("User Name")
+                            .font(.headline)
+                            .foregroundStyle(.black)
+                        Text("Lorem ipsum dolor sit amet")
+                            .font(.subheadline)
+                            .foregroundStyle(.gray)
+                        
+                        HStack {
+                            Image(systemName: "clock")
+                                .foregroundColor(.teal)
+                            Text("10.40 am - 2.40 pm")
+                                .font(.subheadline)
+                                .foregroundStyle(.gray)
+                        }
+                        
+                        HStack{
+                            Text("$10.50")
+                                .foregroundColor(.gray)
+                            Button {
+                            } label: {
+                                Text("appointment")
+                                    .foregroundStyle(.white)
+                                    .padding(.leading, 18)
+                                    .padding(.trailing, 18)
+                                    .padding(.top, 6)
+                                    .padding(.bottom, 6)
+                                    .background(.teal)
+                                    .cornerRadius(15)
+                                
+                            }
+                        }
+                    }
+                }
+                .padding(12)
+                .background(Color.white)
+                .cornerRadius(20)
+                .shadow(radius: 5)
+            }
         }
         .padding()
     }
